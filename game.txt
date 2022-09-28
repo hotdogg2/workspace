@@ -7,3 +7,30 @@ this is a try for git
 this is a try for git
 this is a try for git
 this is a try for git
+def max(a,b):
+    if a>b:
+        return a,b
+    else :
+        return b,a
+
+def Comfactor (a,b):
+    a, b = max(a, b)
+    if  a!=0 and b!=0:
+        temp = a%b
+        if temp ==0:
+            return b
+        else:
+            return Comfactor(b,temp)
+    else:
+        print ('输入数不能为零')
+
+def Comdivisor (a,b):
+    temp = a*b
+    temp = temp/Comfactor(a,b)
+    return int(temp)
+
+
+a = eval(input('第一个数：'))
+b = eval(input('第二个数：'))
+print('最大公因数:{}'.format(Comfactor(a,b)))
+print('最小公约数:{}'.format(Comdivisor(a,b)))
