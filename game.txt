@@ -1,12 +1,4 @@
-this is a try for git
-this is a try for git
-this is a try for git
-this is a try for git
-this is a try for git
-this is a try for git
-this is a try for git
-this is a try for git
-this is a try for git
+
 def max(a,b):
     if a>b:
         return a,b
