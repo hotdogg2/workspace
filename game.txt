@@ -1,4 +1,4 @@
-
+#py求最大公因数，最小公倍数
 def max(a,b):
     if a>b:
         return a,b
